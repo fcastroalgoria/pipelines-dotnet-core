@@ -18,7 +18,7 @@ namespace dotnetcore_tests
           ViewResult result = controller.About() as ViewResult;
 
           // Assert
-          Assert.AreEqual("Your application description page.", result.ViewData["Message"]);
+          Assert.AreEqual("Your application description page FAILED.", result.ViewData["Message"]);
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace dotnetcore_tests
           ViewResult result = controller.Contact() as ViewResult;
 
           // Assert
-          Assert.AreEqual("Your contact page.", result.ViewData["Message"]);
+          Assert.AreEqual("Your contact page FAILED.", result.ViewData["Message"]);
         }
     }
 }
